@@ -1,1 +1,13 @@
-version: '3'
+version: '3.7'
+
+services:
+  dev:
+    build: ./
+    ports:
+      - '1234:1234'
+    volumes:
+      - 'C:\Users\danie\Documents\development:/home/docker/development'
+      - 'dev-box:/home/docker'
+
+volumes:
+  dev-box:
