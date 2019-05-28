@@ -1,0 +1,3 @@
+[submodule "dev-environment-automation"]
+	path = dev-environment-automation
+	url = https://github.com/sandman21dan/dev-environment-automation.git
