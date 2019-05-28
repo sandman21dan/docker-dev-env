@@ -6,7 +6,8 @@ services:
     ports:
       - '1234:1234'
     volumes:
-      - 'C:\Users\danie\Documents\development:/home/docker/development'
+      - '~/Documents/development:/home/docker/development'
+      - '~/Documents/ssh-config:/home/docker/.ssh'
       - 'dev-box:/home/docker'
 
 volumes:
