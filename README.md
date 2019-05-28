@@ -27,7 +27,7 @@ This project makes use of git Submodules to consume the ansible automation scrip
 for the first time clone use:
 
 ```sh
-git clone --recurse-submodules
+git clone https://github.com/sandman21dan/docker-dev-env.git --recurse-submodules
 ```
 
 To clone the project along with the required submodule
