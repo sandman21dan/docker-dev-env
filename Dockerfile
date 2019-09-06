@@ -10,6 +10,7 @@ RUN echo '%sudo ALL=(ALL) NOPASSWD:ALL' >> /etc/sudoers
 
 USER docker
 COPY ./dev-environment-automation/ /home/docker/ansible-playbook
-RUN ansible-playbook --connection=local --inventory 127.0.0.1, /home/docker/ansible-playbook/index.yaml
+RUN ansible-playbook --connection=local --inventory 127.0.0.1, /home/docker/ansible-playbook/index.yaml && \
+  sudo rm -rf /home/docker/ansible-playbook
 
 ENTRYPOINT tail -f /dev/null
